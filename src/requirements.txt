@@ -1,0 +1,9 @@
+pylint
+ipython
+pytest-cov
+flask
+werkzeug
+nbconvert
+jupyter
+scikit-learn[alldeps]
+nose
