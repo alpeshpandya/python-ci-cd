@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
+# In[13]:
 
 
 "Simple classification example"
@@ -12,9 +12,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn2pmml.pipeline import PMMLPipeline
 from sklearn2pmml import sklearn2pmml
+from sklearn.externals import joblib
 
 
-# In[4]:
+# In[14]:
 
 
 def build_model():
@@ -34,10 +35,11 @@ def build_model():
                     ])
     gnb_pipeline.fit(train, train_labels)
     sklearn2pmml(gnb_pipeline, "data/BC_gnb.pmml", with_repr = True)
+    joblib.dump(model, "data/BC_gnb.pkl")
     return gnb_pipeline
 
 
-# In[5]:
+# In[15]:
 
 
 def test_model(model, value):
@@ -45,7 +47,7 @@ def test_model(model, value):
     return model.predict(value)
 
 
-# In[81]:
+# In[16]:
 
 
 class ClassificationTest(unittest.TestCase):

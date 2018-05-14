@@ -7,4 +7,5 @@ nbconvert
 jupyter
 scikit-learn[alldeps]
 nose
+flask-swagger-ui
 git+https://github.com/jpmml/sklearn2pmml.git
