@@ -2,3 +2,4 @@ python-ci-cd-env
 .ipynb_checkpoints
 data/*.pyc
 .DS_Store
+data/*.pmml

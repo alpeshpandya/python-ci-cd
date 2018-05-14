@@ -7,3 +7,4 @@ nbconvert
 jupyter
 scikit-learn[alldeps]
 nose
+git+https://github.com/jpmml/sklearn2pmml.git
