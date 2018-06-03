@@ -4,3 +4,5 @@ data/*.pyc
 .DS_Store
 data/*.pmml
 data/*.pkl
+*.out
+*.log
